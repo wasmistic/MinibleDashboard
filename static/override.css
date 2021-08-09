@@ -1,0 +1,121 @@
+/* --------------------------------------------------- 
+                    Home page  search tab css
+                    Input margin 5px to 0 8.5px
+------------------------------------------------------*/
+.property-search-container .search-container-property form div {
+    margin: 0 8.5px!important;
+}
+/* Home page .property-search-container .search-container-property form 
+    margin-left: 0px!important; to -2rem
+} */
+.property-search-container .search-container-property form {
+    margin-left: -2rem;
+
+}
+/* Home page .property-search-container .search-container 
+    padding 0 added
+} */
+.property-search-container .search-container {
+    padding:0px!important;
+}
+
+.property-search-container {
+    width: 1197px;
+}
+
+
+/* --------------------------------------------------- 
+                    Home page Carousel text content css
+                    padding from 180px to 0px and 
+                    flex-basis from 50% to 35%
+------------------------------------------------------*/
+.promotion-slider-container .right {
+    padding-right:0px!important;
+}
+.promotion-slider-container div {
+    -ms-flex-preferred-size: 35%;
+    flex-basis: 35%;
+}
+/* --------------------End of Carousel text content--------------------------- */
+
+
+
+/* --------------------------------------------------- 
+                    About Us page css
+                    button color change to white
+------------------------------------------------------*/
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    color: #fff!important;
+}
+
+
+/* --------------------------------------------------- 
+                    About Us page css
+                    button:hover color added
+------------------------------------------------------*/
+[type=button]:not(:disabled):hover, [type=reset]:not(:disabled):hover, [type=submit]:not(:disabled):hover, button:not(:disabled):hover {
+    cursor: pointer;
+    color: #006633!important;
+}
+
+/* --------------------------------------------------- 
+                    Property page css
+                   pagination parent flex between children
+                   and change of class to id
+------------------------------------------------------*/
+#pagination{
+    display: flex!important;
+    align-items: center!important;
+    justify-content: space-between!important;
+    width: 100%!important;
+}
+#btn-tab{
+    display: flex!important;
+    align-items: center!important;
+    justify-content: space-between!important;
+    width: 17%!important;
+}
+.pg-no{
+    margin:0 1rem!important;
+}
+
+/* --------------------------------------------------- 
+                    Property page css
+                   first input-field on tab width added
+------------------------------------------------------*/
+.search-container-property input, .search-container-property input::placeholder {
+    width: 100%;
+}
+
+/* -----------------------------------------------------
+    log-in,very and forgot page
+    padding adjusted from 150px 0 0  to 50px
+--------------------------------------------------*/
+.login-container .right {
+    padding: 50px 0 0 80px;
+}
+
+.login-container #verify {
+    padding: 0px 0 0 80px;
+}
+
+.signup-container .right {
+    padding: 50px 0 0 80px;
+}
+
+
+@media(max-width:500px){
+    
+/* --------------------------------------------------- 
+                    Property page css
+                   pagination parent flex between children
+------------------------------------------------------*/
+    #pagination{
+        flex-direction: column!important;
+        justify-content: left!important;
+    }
+    #btn-tab{
+        width: 75%!important;
+    }
+}
